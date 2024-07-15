@@ -1,0 +1,373 @@
+/*****
+- Desktop: 1440px
+
+
+## Colors
+
+### Primary
+- Orange: hsl(26, 100%, 55%)
+- Pale orange: hsl(25, 100%, 94%)
+
+### Neutral
+- Very dark blue: hsl(220, 13%, 13%)
+- Dark grayish blue: hsl(219, 9%, 45%)
+- Grayish blue: hsl(220, 14%, 75%)
+- Light grayish blue: hsl(223, 64%, 98%)
+- White: hsl(0, 0%, 100%)
+- Black (with 75% opacity for lightbox background): hsl(0, 0%, 0%)
+
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
+
+*****/
+
+#root 
+{
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  max-width: 100vw;
+  height: 100%;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+
+}
+
+
+@keyframes logo-spin
+{
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card 
+{
+  padding: 2em;
+}
+
+.read-the-docs 
+{
+  color: hsl(223, 64%, 98%) ;
+}
+/* --------------------------------------------------------------- */
+*
+{
+  padding: 0;
+}
+
+.wrapper
+{
+  padding: 100px 40px;
+}
+
+header
+{ 
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  max-height: 6.4em;
+
+  width: 100%;  
+  background-color: hsl(0, 0%, 100%);
+  border-bottom: hsl(223, 64%, 98%) solid 2px;
+}
+
+.logo
+ {
+  height: 1.25em;
+  padding: 1.8em 0px  0px 10em;
+  
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover 
+{
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+nav
+{ 
+  display: flex;
+  width: 100%;
+  
+  gap:64px
+}
+
+nav .withCart
+{
+  display: inline;
+  position: absolute;
+  right: 8vw;
+}
+
+ul
+{
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+li
+{
+  text-align: center;
+  display: inline;
+  width: 55px;
+  font-weight: 500;
+  margin: 10px;
+  padding-bottom: 49px;
+  color:hsl(219, 9%, 45%); 
+
+}
+
+li:hover
+{  
+  color:hsl(0, 0%, 0%); 
+  border-bottom: 3px solid hsl(25, 100%, 94%);  
+}
+
+li a
+{
+  color:hsl(219, 9%, 45%);  
+}
+
+li a:hover
+{
+  color:rgb(0, 0, 0);  
+}
+
+li.active
+{
+  color:hsl(0, 0%, 0%); 
+  border-bottom: 3px solid hsl(26, 100%, 55%);  
+}
+
+li.active a
+{
+  color:black;   
+}
+
+li.profile:hover, .cart:hover
+{
+  border-bottom: none; 
+
+}
+
+.cart img
+{
+  height: 26px;
+  width: 26px;
+  transform: translateY(-10px);
+  
+}
+
+.profile img
+{
+  height: 50px;
+  width: 50px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+.profile img:hover
+{
+  height: 50px;
+  width: 50px;
+  border: 2px solid hsl(26, 100%, 55%);
+  border-radius: 50%;
+  background-color: hsl(0, 0%, 100%);
+}
+
+/**** body ****/
+main
+{
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  top: 32px;
+  width: 100vw;
+  height:100%;
+
+  background-color: hsl(0, 0%, 100%);
+  gap:10px;
+}
+
+
+.container
+{ 
+  padding: 32px;
+  background-color:hsl(0, 0%, 100%);
+}
+
+.side1
+{
+  /*border: 1px solid hsl(0, 0%, 0%);*/ 
+}
+
+.container img
+{
+  border-radius: 8px;
+}
+
+
+.productView
+{
+  display: flex;
+  flex-direction: column;
+
+  width: 40vw;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.thumbnails
+{  
+  display: flex;
+  padding-top: 50px;
+  width: 500px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#details
+{
+  background-color: hsl(0, 0%, 100%);  
+  padding: 100px 50px;
+  width: 38vw;
+}
+
+h2
+{
+  font-weight: 700;
+  font-size: 48px;
+
+  margin-top: 18px;
+  line-height: 64px;
+ 
+}
+
+h4
+{
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  color: hsl(219, 9%, 45%)
+}
+
+p
+{
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: hsl(219, 9%, 45%)
+}
+
+.pricing
+{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 128px;
+  padding: 1px;
+}
+
+.pricing strong
+{ 
+  font-size: 20px;
+}
+
+.pricing .perc
+{
+  background: hsl(0, 0%, 0%);
+  width: fit-content;
+  color: hsl(0, 0%, 100%);
+  font-size: 12px;
+  font-weight: 500;
+  margin: 4px 8px;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+.pricing p
+{
+  text-decoration:line-through;
+  font-weight: 600;
+  font-size: 12px; 
+}
+
+.bottomWrapper
+{
+  padding-top: 10px;
+  display: flex;
+
+  gap: 10px;
+}
+
+.counter-wrap
+{
+  display: flex;
+  border-radius: 10px;
+
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(230, 60%, 98%);
+  font-weight: bold;
+  width: 128px;
+}
+
+.counter-wrap button
+{ 
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.counter-wrap button:hover
+{
+  border-radius: 10px;
+}
+
+.crementBtn:hover
+{
+  border: none;
+  font-size: 16px;
+}
+
+
+._btn
+{
+  background: hsl(26, 100%, 55%);
+  text-align: center;
+  width: 200px;  
+}
+
+._btn:hover
+{
+  background: hsl(25, 100%, 94%);
+  border: none;
+}
+
+
+
+
+
+
+
