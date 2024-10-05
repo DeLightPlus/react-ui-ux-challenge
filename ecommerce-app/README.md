@@ -1,8 +1,40 @@
-# React + Vite
+# eCommerce App UI/UX Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a React application built with Vite for an eCommerce app UI/UX challenge. The project aims to create a seamless shopping experience with an attractive and responsive design.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- Responsive design for mobile and desktop
+- Product listing and details pages
+- Shopping cart functionality
+- User authentication (sign up and login)
+- Dynamic routing with React Router
+- Basic state management with Context API
+- Easy-to-navigate UI/UX
+
+## Technologies Used
+
+- **React**: A JavaScript library for building user interfaces.
+- **Vite**: A fast build tool and development server.
+- **React Router**: For handling routing in the app.
+- **Styled Components**: For styling components with CSS-in-JS.
+- **Context API**: For managing global state.
+
+## Installation
+
+To get started with the project, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/DeLightPlus/react-ui-ux-challenge/ecommerce-app.git
