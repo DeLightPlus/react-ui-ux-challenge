@@ -37,4 +37,14 @@ To get started with the project, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/DeLightPlus/react-ui-ux-challenge/ecommerce-app.git
+   git clone https://github.com/DeLightPlus/react-ui-ux-challenge
+
+2. Navigate to the project directory:
+   ```bash
+   cd ecommerce-app
+
+3. Install the dependencies:
+   ```bash
+   npm install
+
+
