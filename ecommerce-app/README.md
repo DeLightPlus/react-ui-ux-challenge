@@ -48,9 +48,6 @@ This repository contains a React application built with Vite for an eCommerce ap
          npm install
 
 ## Usage
-
-  To run the development server, use the following command:
-      ```bash
-         npm run dev
-
-  Your app will be available at http://localhost:5173.
+To run the development server, use the following command:
+   ```bash
+      npm run dev
