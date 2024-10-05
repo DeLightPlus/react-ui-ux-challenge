@@ -17,7 +17,6 @@ Welcome to the React UI/UX Challenge! This repository contains multiple React pr
 This repository is designed to showcase various React applications, focusing on UI/UX best practices. Each project will emphasize a specific aspect of development, such as responsiveness, accessibility, and performance.
 
 ## Getting Started
-
   To get started with the projects in this repository, follow the instructions below:
   
   1. **Clone the repository**:
@@ -34,19 +33,19 @@ This repository is designed to showcase various React applications, focusing on 
      npm start
   
   4. Access the application: Open your browser and visit http://localhost:5173.
-  
-## Project Structure  ```java
-    react-ui-ux-challenge/
-    ├── ecommerce-app/
-    │   ├── src/
-    │   ├── public/
-    │   ├── package.json
-    │   └── README.md
-    ├── project2/
-    │   ├── ...
-    ├── project3/
-    │   ├── ...
-    └── README.md
+     
+  ## Project Structure 
+      react-ui-ux-challenge/
+      ├── ecommerce-app/
+      │   ├── src/
+      │   ├── public/
+      │   ├── package.json
+      │   └── README.md
+      ├── project2/
+      │   ├── ...
+      ├── project3/
+      │   ├── ...
+      └── README.md
 
 ## ecommerce-app
 The ecommerce-app is a fully functional e-commerce application built with React. 
