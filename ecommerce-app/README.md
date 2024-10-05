@@ -32,25 +32,25 @@ This repository contains a React application built with Vite for an eCommerce ap
 
 ## Installation
 
-To get started with the project, follow these steps:
+   To get started with the project, follow these steps:
+   
+   1. Clone the repository:
+   
+      ```bash
+         git clone https://github.com/DeLightPlus/react-ui-ux-challenge
+   
+   2. Navigate to the project directory:
+      ```bash
+         cd ecommerce-app
+   
+   3. Install the dependencies:
+      ```bash
+         npm install
 
-1. Clone the repository:
-
-   ```bash
-      git clone https://github.com/DeLightPlus/react-ui-ux-challenge
-
-2. Navigate to the project directory:
-   ```bash
-      cd ecommerce-app
-
-3. Install the dependencies:
-   ```bash
-      npm install
-
-* ## Usage
+## Usage
 
   To run the development server, use the following command:
-   ```bash
-      npm run dev
+      ```bash
+         npm run dev
 
-Your app will be available at http://localhost:5173.
+  Your app will be available at http://localhost:5173.
