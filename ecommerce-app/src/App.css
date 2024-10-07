@@ -69,7 +69,7 @@
 
 .wrapper
 {
-  padding: 100px 40px;
+  padding: 10px 40px;
 }
 
 header
@@ -78,11 +78,12 @@ header
   top: 0;
   left: 0;
 
-  max-height: 6.4em;
+  max-height: 76px;
 
   width: 100%;  
   background-color: hsl(0, 0%, 100%);
   border-bottom: hsl(223, 64%, 98%) solid 2px;
+  z-index: 100;
 }
 
 .logo
@@ -131,7 +132,7 @@ li
   width: 55px;
   font-weight: 500;
   margin: 10px;
-  padding-bottom: 49px;
+  padding-bottom: 21px;
   color:hsl(219, 9%, 45%); 
 
 }
@@ -175,6 +176,73 @@ li.profile:hover, .cart:hover
   width: 26px;
   transform: translateY(-10px);
   
+}
+
+/* .cart:hover 
+{
+  background-color: blanchedalmond;
+} */
+
+.cart:hover > .cart-card 
+{
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 1s;
+}
+
+.cart-card
+{
+  position: absolute;
+  top: 8svh;
+  right: 0;
+  background: rgb(250, 243, 230);
+  width: 320px;
+  height: 286px;
+
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+
+  border-radius: 12px;
+  box-shadow: gray 0px 4px 8px;
+
+  opacity: 0;
+  transition: visibility 0s, opacity 60s;
+  z-index: 200;
+}
+
+.cart-card .cart-card-info
+{
+  display: flex;
+}
+
+.cart-card .cart-card-image img
+{
+  margin: 16px 4px ;
+  width: 48px;
+  height: 48px;
+}
+
+.cart-card .del_btn
+{
+  background: transparent;
+  border: none;
+}
+
+.cart-card .del_btn:hover
+{
+  background: transparent;
+  border: none;
+  transform: scale(1.2px);
+}
+
+
+.cart-card button
+{
+  justify-self: end;
 }
 
 .profile img
@@ -241,11 +309,39 @@ main
 .thumbnails
 {  
   display: flex;
-  padding-top: 50px;
+  padding-top: 20px;
   width: 500px;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;  
 }
+
+.thumbnails .thumb-image
+{
+  padding: 1px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.527);
+  
+}
+
+.thumbnails .thumb-image:hover
+{
+  opacity: 0.8;
+}
+
+.thumbnails .thumb-image.active
+{
+  
+}
+
+.thumbnails .thumb-image.active img
+{
+  
+  padding: 1px;
+  border: sandybrown solid 3px;
+  border-radius: 6px;
+  opacity: 0.5;
+}
+
 
 #details
 {
@@ -349,6 +445,7 @@ p
 {
   border: none;
   font-size: 16px;
+  background: hsl(25, 100%, 94%);
 }
 
 
@@ -361,7 +458,7 @@ p
 
 ._btn:hover
 {
-  background: hsl(25, 100%, 94%);
+  background: hsl(25, 100%, 88%);
   border: none;
 }
 

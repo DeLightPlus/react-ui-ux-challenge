@@ -6,13 +6,17 @@ import avatar from './assets/images/image-avatar.png';
 
 import productImg from './assets/images/image-product-1.jpg';
 import prodImgthumb from './assets/images/image-product-1-thumbnail.jpg';
+import prodImgthumb2 from './assets/images/image-product-2-thumbnail.jpg';
+import prodImgthumb3 from './assets/images/image-product-3-thumbnail.jpg';
+import prodImgthumb4 from './assets/images/image-product-4-thumbnail.jpg';
 
 import minusIcon from './assets/images/icon-minus.svg';
 import plusIcon from './assets/images/icon-plus.svg';
 
 
-import viteLogo from '/vite.svg'
+import Header from './components/Header';
 import './App.css'
+import CartCard from './components/Cart_Card';
 
 function App() 
 {
@@ -20,40 +24,7 @@ function App()
   return (
 
       <div className='wrapper' >
-        <header>
-          <div className='nav'>
-            <nav>
-              <img className='logo' src={sneakersLogo} alt='sneakers' height='20'/>
-              <ul>
-                <li>
-                  <a href=""> Collections </a> 
-                </li>
-
-                <li className='active'>
-                  <a href=""> Man </a>  
-                </li>
-
-                <li>
-                  <a href=""> Woman </a>  
-                </li>
-
-                <li>
-                  <a href=""> About </a>  
-                </li>
-
-                <li >
-                  <a href=""> Contact </a>  
-                </li>
-
-                <ul className='withCart'>
-                  <li className='cart'><a href=""><img src={cartLogo} alt="Cart" /></a> </li>
-                  <li className='profile'> <a href=""><img src={avatar} alt="KP" /></a> </li>
-                </ul>
-              </ul>
-            </nav>
-          </div>
-         
-        </header>  
+        <Header/>
 
         <main>
           <div className="container side1" id='showcase'>
@@ -64,10 +35,21 @@ function App()
               </section>
 
               <section className='thumbnails'>
-                <img src={prodImgthumb} height='100' width='100'/>
-                <img src={prodImgthumb} height='100' width='100'/>
-                <img src={prodImgthumb} height='100' width='100'/>
-                <img src={prodImgthumb} height='100' width='100'/>
+                <div className='thumb-image active'>
+                  <img src={prodImgthumb} height='100' width='100' />
+                </div>
+
+                <div className='thumb-image'>
+                  <img src={prodImgthumb2} height='100' width='100' />
+                </div>
+
+                <div className='thumb-image'>
+                  <img src={prodImgthumb3} height='100' width='100' />
+                </div>
+
+                <div className='thumb-image'>
+                  <img src={prodImgthumb4} height='100' width='100' />
+                </div>                
               </section>
             </div>
           </div>
