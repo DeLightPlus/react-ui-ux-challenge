@@ -22,17 +22,8 @@ This repository is designed to showcase various React applications, focusing on 
   1. **Clone the repository**:
      ```bash
      git clone https://github.com/DeLightPlus/react-ui-ux-challenge.git
-     cd react-ui-ux-challenge
-     
-  2. Install dependencies: For each project, navigate to the project directory and run:
-     ```bash
-     npm install
-  
-  3. Run the project: Start the development server:
-     ```bash
-     npm start
-  
-  4. Access the application: Open your browser and visit http://localhost:5173.
+     cd react-ui-ux-challenge  
+ 
      
   ## Project Structure 
       react-ui-ux-challenge/
@@ -62,9 +53,15 @@ It includes features such as product listings, shopping cart functionality, and 
    cd ecommerce-app
 
 * Then, follow the instructions to install dependencies and start the application:
-  ```bash
-    npm install
-    npm run dev
+     
+ 1. Install dependencies: For each project, navigate to the project directory and run:
+     ```bash
+     npm install
+  
+  2. Run the project: Start the development server:
+     ```bash
+     npm run dev  
+  
 You can access the application at http://localhost:5173.
 
 Technologies Used This project utilizes a variety of technologies and libraries to enhance its functionality and user experience:
