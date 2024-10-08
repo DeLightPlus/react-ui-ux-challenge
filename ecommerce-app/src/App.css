@@ -36,7 +36,6 @@
   height: 100%;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 400;
-
 }
 
 
@@ -75,10 +74,10 @@
 header
 { 
   position: fixed;
-  top: 0;
+  top: 1px;
   left: 0;
 
-  max-height: 76px;
+  max-height: 90px;
 
   width: 100%;  
   background-color: hsl(0, 0%, 100%);
@@ -131,16 +130,16 @@ li
   display: inline;
   width: 55px;
   font-weight: 500;
-  margin: 10px;
+  margin: 26px 16px;
   padding-bottom: 21px;
   color:hsl(219, 9%, 45%); 
 
 }
 
-li:hover
+li:hover, .active:hover
 {  
   color:hsl(0, 0%, 0%); 
-  border-bottom: 3px solid hsl(25, 100%, 94%);  
+  border-bottom: 3px solid hsl(26, 100%, 55%) ;  
 }
 
 li a
@@ -156,7 +155,7 @@ li a:hover
 li.active
 {
   color:hsl(0, 0%, 0%); 
-  border-bottom: 3px solid hsl(26, 100%, 55%);  
+  border-bottom: 3px solid hsl(25, 100%, 94%);  
 }
 
 li.active a
@@ -193,30 +192,48 @@ li.profile:hover, .cart:hover
 .cart-card
 {
   position: absolute;
-  top: 8svh;
+  top: 7svh;
   right: 0;
-  background: rgb(250, 243, 230);
-  width: 320px;
-  height: 286px;
+  background: hsl(223, 64%, 98%);
+  width: 360px;
+  height: 226px;
 
   visibility: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 16px;
+  padding: 0px 1px 27px;
 
   border-radius: 12px;
-  box-shadow: gray 0px 4px 8px;
+  box-shadow: gray 0px 13px 16px -8px;
 
   opacity: 0;
   transition: visibility 0s, opacity 60s;
+  transform: translateX(32px);
   z-index: 200;
 }
 
 .cart-card .cart-card-info
 {
   display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.cart-card h3
+{
+  padding-left: 16px;
+}
+
+.cart-card-info small
+{
+  color: grey;
+}
+
+.cart-card-info strong
+{
+  color: black;
 }
 
 .cart-card .cart-card-image img
@@ -230,6 +247,13 @@ li.profile:hover, .cart:hover
 {
   background: transparent;
   border: none;
+  padding: 0px 0px 0px 20px;
+}
+
+.cart-card .del_btn img
+{
+  width: 16px;
+  height: 16px;
 }
 
 .cart-card .del_btn:hover
@@ -326,11 +350,6 @@ main
 .thumbnails .thumb-image:hover
 {
   opacity: 0.8;
-}
-
-.thumbnails .thumb-image.active
-{
-  
 }
 
 .thumbnails .thumb-image.active img
@@ -451,14 +470,23 @@ p
 
 ._btn
 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: hsl(26, 100%, 55%);
   text-align: center;
   width: 200px;  
+  gap: 10px;
+}
+
+._btn#checkout
+{
+  width: 90%;
 }
 
 ._btn:hover
 {
-  background: hsl(25, 100%, 88%);
+  background: hsl(26.58deg 100% 70.78%);
   border: none;
 }
 

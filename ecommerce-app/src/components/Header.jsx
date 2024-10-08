@@ -21,11 +21,11 @@ const Header = () => {
                   <a href=""> Collections </a> 
                 </li>
 
-                <li className='active'>
+                <li className=''>
                   <a href=""> Man </a>  
                 </li>
 
-                <li>
+                <li className='active'>
                   <a href=""> Woman </a>  
                 </li>
 
