@@ -54,7 +54,7 @@ function App()
             </div>
           </div>
 
-          <div className="side 2" id='details'>
+          <div className="side2" id='details'>
             <div>
                 <h4>SNEAKER COMPANY</h4>
             </div>

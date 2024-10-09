@@ -143,8 +143,8 @@ li
 
 li:hover, .active:hover
 {  
-  color:hsl(0, 0%, 0%); 
-  border-bottom: 3px solid hsl(26, 100%, 55%) ;  
+  
+  
 }
 
 li a
@@ -171,7 +171,6 @@ li.active a
 li.profile:hover, .cart:hover
 {
   border-bottom: none; 
-
 }
 
 .cart img
