@@ -10,11 +10,11 @@ const CartCard = () => {
           <h3>Cart</h3>
         </div>  
 
-        {/* <div className="cart-card-info">
-          <p><b>Your cart is empty.</b></p> 
-        </div> */}
-
         <div className="cart-card-info">
+          <p><b>Your cart is empty.</b></p> 
+        </div>
+
+        {/* <div className="cart-card-info">
           <div className="cart-card-image">
               <img cart-product-img src={prodImgthumb} alt=''/>
           </div>
@@ -29,7 +29,7 @@ const CartCard = () => {
           </button>
 
 
-        </div>
+        </div> */}
     
       <button className="_btn" id='checkout' onClick={ console.log('checkout') }>Checkout</button> 
      
