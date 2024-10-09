@@ -19,7 +19,7 @@ const CartCard = () => {
               <img cart-product-img src={prodImgthumb} alt=''/>
           </div>
 
-          <div style={{height:'64px', padding:'10px 0px', flex:'1'}}>
+          <div style={{height:'64px', padding:'10px 0px', textAlign:'left'}}>
               <small> Fall Limited Edition Sneakers</small> <br/>
               <small> $125.00 x 3 <strong>$375.00</strong></small>
           </div> 
@@ -27,11 +27,9 @@ const CartCard = () => {
           <button className='del_btn'>
             <img src={deleteButton} />
           </button>
-
-
         </div> */}
     
-      <button className="_btn" id='checkout' onClick={ console.log('checkout') }>Checkout</button> 
+      {/* <button className="_btn" id='checkout' onClick={ console.log('checkout') }>Checkout</button>  */}
      
     </div>
   );

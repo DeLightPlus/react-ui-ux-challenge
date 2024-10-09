@@ -22,8 +22,7 @@ This repository is designed to showcase various React applications, focusing on 
   1. **Clone the repository**:
      ```bash
      git clone https://github.com/DeLightPlus/react-ui-ux-challenge.git
-     cd react-ui-ux-challenge  
- 
+     cd react-ui-ux-challenge 
      
   ## Project Structure 
       react-ui-ux-challenge/

@@ -86,7 +86,7 @@ function App()
               </div> 
 
               <button className="_btn">
-                <img src={cartLogo} alt='' />
+                <img src={cartLogo} alt='' style={{color:'black'}} width='16' height='16'/>
                   Add to Cart                
               </button>
             </div>
