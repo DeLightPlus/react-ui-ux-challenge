@@ -15,7 +15,9 @@ import plusIcon from './assets/images/icon-plus.svg';
 
 
 import Header from './components/Header';
-import './App.css'
+import './App.css';
+import './styles.css';
+
 import CartCard from './components/Cart_Card';
 
 function App() 
@@ -23,7 +25,7 @@ function App()
 
   return (
 
-      <div className='wrapper' >
+      < >
         <Header/>
 
         <main>
@@ -96,7 +98,7 @@ function App()
           </div>
         </main>
 
-      </div> 
+      </> 
  
   )
 }

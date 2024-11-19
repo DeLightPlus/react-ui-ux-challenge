@@ -1,0 +1,364 @@
+/* Global Styles */
+/* nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  } */
+
+header
+{ 
+  position: fixed;
+  top: -2px;
+  left: 0;
+
+  max-height: 92px;
+
+  width: 100%;  
+  background-color: hsl(0, 0%, 100%);
+  border-bottom: hsl(223, 64%, 98%) solid 2px;
+  z-index: 100;
+}
+
+.logo
+{
+  height: 1.25em;
+  padding: 0px 0px  32px 2em;
+  
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover 
+{
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+
+nav
+{ 
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap:69px;
+  padding: 0px;
+  margin-top: 18px;
+}
+
+nav .withCart
+{    
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    margin-right: 16px;
+    height: 48px;
+}
+
+ul
+{
+  display: flex;
+  flex-direction: row;
+  gap: 52px;
+}
+
+li
+{
+  text-align: center;
+  display: inline;
+  width: 55px;
+  font-weight: 500;
+  /* margin: 26px 16px; */
+  padding-bottom: 32px;
+  color:hsl(219, 9%, 45%); 
+
+}
+
+li:hover, li.active:hover
+{  
+  border-bottom: 3px solid hsl(25, 97%, 64%);  
+  
+}
+
+li a
+{
+  color:hsl(219, 9%, 45%);  
+}
+
+li a:hover
+{
+  color:rgb(0, 0, 0);  
+  
+}
+
+li.active
+{
+  color:hsl(0, 0%, 0%); 
+  border-bottom: 3px solid hsla(25, 100%, 94%, 0.836);  
+}
+
+li.active a
+{
+  color:black;   
+}
+
+li.profile:hover, .cart:hover
+{
+  border-bottom: none; 
+}
+
+.cart img
+{
+  height: 26px;
+  width: 26px;
+  /* transform: translateY(-10px); */
+  
+}
+
+.cart:hover > .cart-card 
+{
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 1s;
+}
+
+.cart-card
+{
+  position: absolute;
+  top: 7svh;
+  right: 48px;
+  background: hsl(223, 64%, 98%);
+  width: 360px;
+  height: 226px;
+
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0px 1px 27px;
+
+  border-radius: 12px;
+  box-shadow: gray 0px 13px 16px -8px;
+
+  opacity: 0;
+  transition: visibility 0s, opacity 60s;
+  transform: translateX(32px);
+  z-index: 200;
+}
+
+.cart-card .cart-card-info
+{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-self: start;
+  /* padding-left: 25px; */
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap:10px;
+ 
+}
+
+.cart-card h3
+{
+  padding-left: 16px;
+}
+
+.cart-card-info small
+{
+  color: grey;
+  width: 100%;
+  
+}
+
+.cart-card-info strong
+{
+  color: black;
+}
+
+.cart-card .cart-card-image img
+{
+  margin: 16px 4px ;
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+}
+
+.cart-card .del_btn
+{
+  background: transparent;
+  border: none;
+  padding: 0px 0px 0px 20px;
+}
+
+.cart-card .del_btn img
+{
+  width: 16px;
+  height: 16px;
+}
+
+.cart-card .del_btn:hover
+{
+  background: transparent;
+  border: none;
+  transform: scale(1.2px);
+}
+
+
+.cart-card button
+{
+  justify-self: end;
+}
+
+img:hover {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0) contrast(100%) grayscale(100%);
+  transition: filter 0.2s ease-in-out; /* smooth transition for hover effect */
+}
+
+/* You can also target the specific icons using class names or IDs for more control */
+.cart img:hover, .profile img:hover {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0) contrast(100%) grayscale(100%);
+}
+
+.profile img
+{
+  height: 50px;
+  width: 50px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+.profile img:hover
+{
+  height: 50px;
+  width: 50px;
+  /* border: 2px solid hsl(26, 100%, 55%); */
+  border-radius: 50%;
+  background-color: hsl(0, 0%, 100%);
+}
+
+  
+.hamburger-menu 
+{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+  
+.hamburger-menu .bar 
+{
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+}
+  
+.closeBtn
+{
+  display: none;
+}
+
+  /* For mobile view */
+@media (max-width: 768px) 
+{
+    /* Hide regular navigation links and display hamburger menu */
+    .nav
+    {
+        padding: 8px;
+    }
+    nav{gap: 6px;}
+    .logo 
+    {
+        height: 1.25em;
+        padding: 0; 
+        will-change: filter;
+    }  
+    
+    .withCart li
+    {
+        padding-top: 32px;
+    }
+    
+    .nav-links 
+    {
+      display: none;
+      flex-direction: column;
+      gap: 0px;
+      position: absolute;
+      top: 0px;
+      right: 20px;
+      left: 0px;
+      background-color: #fff;
+      padding: 0 20px;
+      /* box-shadow: 0px 0px 15px rgba(136, 136, 136, 0.1); */
+      border-radius: 8px;
+      height: 100vh;
+      text-align: start;
+    }
+    
+  
+    .nav-links.open 
+    {
+      display: flex;
+      width: 64%;
+    }
+
+    .nav-links.open li
+    {
+      text-align: start; 
+      border: none;       
+    }
+
+    .nav-links.open a
+    {
+      text-align: start; 
+      font-weight: 700;
+      color: black;   
+    }
+  
+    /* Show hamburger menu on small screens */
+    .hamburger-menu 
+    {
+      display: flex;
+    }
+
+    .closeBtn 
+    {
+      display: block;
+    }
+  
+    .withCart 
+    {
+      flex-direction: row;
+      gap: 10px;
+    }
+  
+    /* Cart and profile icons should be in a column on small screens */
+    .withCart .cart, .withCart .profile 
+    {
+      display: block;
+    }
+    
+    .cart-card
+    {
+      top: 92px;
+      left: 0px;
+      width: 96%;
+      margin-left: -25px ;
+    }
+}
+  
+  

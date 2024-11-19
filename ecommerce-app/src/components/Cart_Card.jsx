@@ -6,7 +6,7 @@ import React from 'react';
 const CartCard = () => {
   return (
     <div className="cart-card">
-        <div style={{ width:'100%', textAlign:'left', borderBottom:'#8080802b solid 2px'}}> 
+        <div style={{ color: "black", width:'100%', textAlign:'left', borderBottom:'#8080802b solid 2px'}}> 
           <h3>Cart</h3>
         </div>  
 
